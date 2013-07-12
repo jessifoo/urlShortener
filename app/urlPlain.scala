@@ -21,6 +21,7 @@ object urlPlain {
     // incremental ID for created hash's
     private var id = 0;
     
+    
     /** 
      * Given a url a base 62 hash is returned
      * 
@@ -40,6 +41,7 @@ object urlPlain {
         }
     }
     
+    
     /**
      * Retrieve URL associated with hash
      * 
@@ -54,6 +56,22 @@ object urlPlain {
         addClick(hash)
         url.toString
     }
+    
+    
+    /**
+     * Retrieve basic click statistics
+     * 
+     * @Param hash
+     * @Return Map of click statd, Map["Description", Info]
+     */
+    def statsForHash(hash: String): Map[String, Any] = {
+        val clicks = hashClicksMap.getOrElse(hash,-1)
+        if(clicks == -1){
+            throw invalidHashException(s"Sorry, that is not a valid hash.")
+        }
+        Map("Number of times this url has been clicked: " -> clicks)
+    }
+
     
     /**
      * Attaches prefix if needed so all URLs start with http://www.
@@ -75,8 +93,9 @@ object urlPlain {
      */
     def validUrl(url:String): Boolean = {
         val re = """\(?\bhttp://[-A-Za-z0-9+&@#/%?=~_()|!:,.;]*[-A-Za-z0-9+&@#/%=~_()|]""".r
-        re.pattern.matcher(url).matches // true
+        re.pattern.matcher(url).matches
     }
+    
     
     /**
      * Synchronized method to create Hash based on incremental id,
@@ -106,21 +125,6 @@ object urlPlain {
         hashClicksMap(hash) = hashClicksMap(hash)+1
     }
 	
-    
-    /**
-     * Retrieve basic click statistics
-     * 
-     * @Param hash
-     * @Return Map of click statd, Map["Description", Info]
-     */
-	def statsForHash(hash: String): Map[String, Any] = {
-        val clicks = hashClicksMap.getOrElse(hash,-1)
-        if(clicks == -1){
-            throw invalidHashException(s"Sorry, that is not a valid hash.")
-        }
-        Map("Number of times this url has been clicked: " -> clicks)
-	}
-
 	
     /**
      * Convert number to base 62 
