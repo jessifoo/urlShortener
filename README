@@ -1,5 +1,6 @@
-
 URL Shortener Technical Challenge
+
+Files intialized using Typesafe Activator, SBT, Scala, and AKKA
 
 app/urlPlain.scala and test/urlPlainSpec.scala
 satisfy the base requirements
