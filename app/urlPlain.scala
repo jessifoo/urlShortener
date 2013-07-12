@@ -32,7 +32,7 @@ object urlPlain {
             throw invalidUrlException(s"That is not a valid URL.")
         }
         val prefixUrl = attachPrefix(url)
-        var idNum = urlIdMap.getOrElse(prefixUrl,-1)
+        val idNum = urlIdMap.getOrElse(prefixUrl,-1)
         if(idNum == -1){
             create(url)    
         }else{
@@ -106,6 +106,7 @@ object urlPlain {
         hashClicksMap(hash) = hashClicksMap(hash)+1
     }
 	
+    
     /**
      * Retrieve basic click statistics
      * 
