@@ -26,7 +26,7 @@ object HelloAkkaScala extends App {
   val inbox = Inbox.create(system)
 
   // Tell the 'greeter' to change its 'greeting' message
-  greeter tell WhoToGreet("akka")
+  greeter tell WhoToGreet("akkas")
 
   // Ask the 'greeter for the latest 'greeting'
   // Reply should go to the "actor-in-a-box"

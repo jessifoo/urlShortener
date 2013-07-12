@@ -1,6 +1,6 @@
-[0m[[0mdebug[0m] [0mRunning Test HelloAkkaTest : annotation(false, org.junit.Test) with arguments -v[0m
+[0m[[0mdebug[0m] [0mRunning Test urlPlainTests : subclass(false, org.scalatest.Suite) with arguments [0m
 [0m[[0mdebug[0m] [0mRunning Test HelloAkkaSpec : subclass(false, org.scalatest.Suite) with arguments [0m
-[0m[[0minfo[0m] [0mPassed: : Total 4, Failed 0, Errors 0, Passed 4, Skipped 0[0m
+[0m[[0minfo[0m] [0mPassed: : Total 13, Failed 0, Errors 0, Passed 13, Skipped 0[0m
 [0m[[0mdebug[0m] [0mPassed tests:[0m
+[0m[[0mdebug[0m] [0m	urlPlainTests[0m
 [0m[[0mdebug[0m] [0m	HelloAkkaSpec[0m
-[0m[[0mdebug[0m] [0m	HelloAkkaTest[0m

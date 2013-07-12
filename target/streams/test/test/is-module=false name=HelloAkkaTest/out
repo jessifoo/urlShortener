@@ -1,4 +1,4 @@
 [0m[[0minfo[0m] [0mTest run started[0m
 [0m[[0minfo[0m] [0mTest HelloAkkaTest.testSetGreeter started[0m
 [0m[[0minfo[0m] [0mTest HelloAkkaTest.testGetGreeter started[0m
-[0m[[0minfo[0m] [0mTest run finished: 0 failed, 0 ignored, 2 total, 2.443s[0m
+[0m[[0minfo[0m] [0mTest run finished: 0 failed, 0 ignored, 2 total, 1.909s[0m

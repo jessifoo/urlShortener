@@ -1,0 +1,20 @@
+[0m[[0minfo[0m] [0m[32murlPlainTests:[0m[0m
+[0m[[0minfo[0m] [0m[32mhashUrl method [0m[0m
+[0m[[0minfo[0m] [0m[32m- should convert a url to a hash[0m[0m
+[0m[[0minfo[0m] [0m[32m- should throw invalidUrlException if an invalid url is submitted[0m[0m
+[0m[[0minfo[0m] [0m[32murlFromHash method [0m[0m
+[0m[[0minfo[0m] [0m[32m- should convert a hash to a url[0m[0m
+[0m[[0minfo[0m] [0m[32m- should throw invalidHashException if an invalid hash is submitted[0m[0m
+[0m[[0minfo[0m] [0m[32mstatsForHash method [0m[0m
+[0m[[0minfo[0m] [0m[32m- should give stats for a hash[0m[0m
+[0m[[0minfo[0m] [0m[32m- should throw invalidHashException if an invalid hash is submitted[0m[0m
+[0m[[0minfo[0m] [0m[32mattachPrefix method [0m[0m
+[0m[[0minfo[0m] [0m[32m- should attach appropriate prefix when necessary[0m[0m
+[0m[[0minfo[0m] [0m[32mvalidUrl method [0m[0m
+[0m[[0minfo[0m] [0m[32m- should determine if a url is valid or not[0m[0m
+[0m[[0minfo[0m] [0m[32mcreate method [0m[0m
+[0m[[0minfo[0m] [0m[32m- should return hash[0m[0m
+[0m[[0minfo[0m] [0m[32mconvertTo62 method [0m[0m
+[0m[[0minfo[0m] [0m[32m- should return right hash[0m[0m
+[0m[[0minfo[0m] [0m[32mremainder method [0m[0m
+[0m[[0minfo[0m] [0m[32m- should return right value[0m[0m

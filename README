@@ -1,0 +1,8 @@
+
+URL Shortener Technical Challenge
+
+app/urlPlain.scala and test/urlPlainSpec.scala
+satisfy the base requirements
+
+app/actorsAttempt.scala (no unit tests for this class)
+is my attempt at understanding and implementing an actor system => incomplete
